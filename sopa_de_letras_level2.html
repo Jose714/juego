@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sopa de letras</title>
+     <link rel="stylesheet" type="text/css" href="style_futbol.css">
+        <script src="Jquery/jquery.js"></script>
+        <script src="cronometro.js"></script>
+        <script >
+$(document).ready(function(){
+ $("#banner1").hide();//cerrar el mensaje de congratulation   
+});
+        </script>
+
+    </head>
+    <body id="cuerpo" onLoad="iniciar()">
+
+        <div id="cabecera">Sopa de letras</div>
+        <div id="marcador">
+            <table id="tabla1" width="25%"  border="0">
+                <tr>
+
+                    <td><a href="sopa_de_letras.html"><img src="imagenes/beach-hut-1-152-287755.png" id="c_mensaje" width="50px" height="50px" >Home</a></td>
+                    <td>Palabras Encontradas<label for="textfield2"></label><input type="text" name="textfield2" id="c_intentos"></td>
+
+                </tr>
+            </table>
+            <div id="nav">
+                <ul>
+                    <li> <a href="pagina_inicio.html">Inicio</a></li>
+                    <li> <a href="../../../../Desktop/JavaScript/doWhile_intetos.html">Juegos gratis</a></li>
+                    <li> <a href="https://www.youtube.com">Next level</a></li>	
+                    <li> <a href="https://www.youtube.com">Mas</a></li>	
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div id="contenedor_lista">
+            <ul>
+            <h3>Jugadores de Futbol</h3>
+                <li id="li1">MESSI</li>
+                <li id="li2">RONALDINHO</li>
+                <li id="li3">CRISTIANO</li>
+                <li id="li4">ZICO</li>
+                <li id="li5">VALDERRAMA</li>
+                <li id="li6">ASPRILLA</li>
+                <li id="li7">MARADONA</li>
+                <li id="li8">DEL PIERO</li>
+                <li id="li9">GULLIT</li>
+                <li id="li10">PUSKAS</li>
+
+            </ul>
+        </div>
+
+        <form name="form1" method="post" action="" id="miformulario">
+
+            <table id="tabla2" width="500" height="500"  class="sopa">
+
+                <tr>
+
+                    <td id="cristiano1">C</td>
+                    <td >I</td>
+                    <td >R</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td id="pibe10">A</td>
+                    <td id="asprilla1">S</td>
+                    <td id="asprilla2">P</td>
+                    <td id="asprilla3">R</td>
+                    <td id="asprilla4">I</td>
+                    <td id="asprilla5">L</td>
+                    <td id="asprilla6">L</td>
+                    <td id="asprilla7">A</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >C</td>
+
+                </tr>
+                <tr>
+                    <td >Z</td>
+                    <td id="cristiano2">R</td>
+                    <td id="zico1">Z</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td id="pibe9">M</td>
+                    <td >E</td>
+                    <td >O</td>
+                    <td >S</td>
+                    <td >O</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >H</td>
+                    <td >M</td>
+                    <td >Q</td>
+                    <td >R</td>
+                </tr>
+                <tr>
+
+                    <td >P</td>
+                    <td >I</td>
+                    <td id="cristiano3">I</td>
+                    <td id="zico2">I</td>
+                    <td >U</td>
+                    <td >I</td>
+                    <td >N</td>
+                    <td >O</td>
+                    <td id="pibe8">A</td>
+                    <td >J</td>
+                    <td id="piero8">O</td>
+                    <td id="piero7">R</td>
+                    <td id="piero6">E</td>
+                    <td id="piero5">I</td>
+                    <td id="piero4">P</td>
+                    <td id="piero3">L</td>
+                    <td id="piero2">E</td>
+                    <td id="piero1">D</td>
+                </tr>
+                <tr>
+
+                    <td >O</td>
+                    <td >C</td>
+                    <td >K</td>
+                    <td id="cristiano4">S</td>
+                    <td id="zico3">C</td>
+                    <td >G</td>
+                    <td >B</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td id="pibe7">R</td>
+                    <td >K</td>
+                    <td >R</td>
+                    <td >L</td>
+                    <td >M</td>
+                    <td >O</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >T</td>
+                </tr>
+                <tr>
+                    <td >J</td>
+                    <td >I</td>
+                    <td >R</td>
+                    <td >L</td>
+                    <td id="cristiano5">T</td>
+                    <td id="zico4">O</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                    <td >A</td>
+                    <td id="pibe6">R</td>
+                    <td >C</td>
+                    <td >A</td>
+                    <td >T</td>
+                    <td >R</td>
+                    <td >A</td>
+                    <td >Z</td>
+                    <td >I</td>
+                </tr>
+                <tr>
+
+                    <td >O</td>
+                    <td >P</td>
+                    <td >Q</td>
+                    <td >L</td>
+                    <td >T</td>
+                    <td id="cristiano6">I</td>
+                    <td >O</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td >J</td>
+                    <td >I</td>
+                    <td id="pibe5">E</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td id="messi5">I</td>
+                    <td >A</td>
+                </tr>
+                <tr>
+
+                    <td id="gullit6">T</td>
+                    <td id="gullit5">I</td>
+                    <td id="gullit4">L</td>
+                    <td id="gullit3">L</td>
+                    <td id="gullit2">U</td>
+                    <td id="gullit1">G</td>
+                    <td id="cristiano7">A</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td >S</td>
+                    <td >S</td>
+                    <td >R</td>
+                    <td id="pibe4">D</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >V</td>
+                    <td id="messi4">S</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td id="puskas1">P</td>
+                    <td id="puskas2">U</td>
+                    <td id="puskas3">S</td>
+                    <td id="puskas4">K</td>
+                    <td id="puskas5">A</td>
+                    <td id="puskas6">S</td>
+                    <td >A</td>
+                    <td id="cristiano8">N</td>
+                    <td >O</td>
+                    <td >R</td>
+                    <td >I</td>
+                    <td >R</td>
+                    <td >A</td>
+                    <td id="pibe3">L</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td id="messi3">S</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td id="ronaldinho10">O</td>
+                    <td id="ronaldinho9">H</td>
+                    <td id="ronaldinho8">N</td>
+                    <td id="ronaldinho7">I</td>
+                    <td id="ronaldinho6">D</td>
+                    <td id="ronaldinho5">L</td>
+                    <td id="ronaldinho4">A</td>
+                    <td id="ronaldinho3">N</td>
+                    <td id="ronaldinho2">O</td>
+                    <td id="ronaldinho1">R</td>
+                    <td >I</td>
+                    <td >E</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td id="pibe2">A</td>
+                    <td >S</td>
+                    <td id="messi2">E</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td >D</td>
+                    <td >F</td>
+                    <td >G</td>
+                    <td >H</td>
+                    <td >I</td>
+                    <td >A</td>
+                    <td >L</td>
+                    <td id="maradona8">A</td>
+                    <td id="maradona7">N</td>
+                    <td id="maradona6">O</td>
+                    <td id="maradona5">D</td>
+                    <td id="maradona4">A</td>
+                    <td id="maradona3">R</td>
+                    <td id="maradona2">A</td>
+                    <td id="maradona1">M</td>
+                    <td id="pibe1">V</td>
+                    <td id="messi1">M</td>
+                    <td >L</td>
+                </tr>
+            </table>
+        </form>
+        <div id="banner"><h3>Nivel 2 Jugadores De Futbol</h3>
+            Para seleccionar la palabra a buscar debes
+            dar click en la ultima letra con la cual 
+            esta escrita esta de otra manera no podras seleccionar la palabra que encontraste.
+            <div id="imagen"><img src="imagenes/gorgori.gif" width="80px" height="100px" id="img1"></div>
+            <p id="cerrar">X</p>
+        </div>
+
+        <div id="banner1"><h3>Congratulation</h3>
+            Haz ganado la partida
+            <img src="imagenes/one-piece-accion-real.jpg" width="350px" height="150px">
+            <p id="cerrar1">X</p>
+        </div>
+         <div id="tiempo"><p id="cronometro">Horas: <span id="hora">00</span> Minutos: <span id="minuto">00</span> Segundos:  <span id="segundo">00</span></p></div>
+         <img src="imagenes/seBusca.jpg" id="sebusca">
+        <script>
+            $(document).ready(function () {
+                document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+                document.getElementById("cerrar1").addEventListener("click", cerrar_banner1, false);
+            });
+            function cerrar_banner() {
+                $("#banner").remove();
+            }
+            function cerrar_banner1() {
+                $("#banner1").remove();
+            }
+            var numero_ganador = 9;
+        //alert(numero_aleatorio);
+            var miNum = 0;
+            var numero;
+            var intentos = 0;
+            var acumulado="";
+			var n1=0,n2=0,n3=0,n4=0,n5=0,n6=0,n7=0,n8=0,n9=0,n10=0;
+            var intentos_consumidos = document.getElementById("c_intentos");
+        </script>
+
+        <script>
+
+            var palabra = document.querySelectorAll("td");//esto es un array
+            for (var i = 0; palabra.length; i++) {
+                palabra[i].addEventListener("click", mostrar, false);
+            };
+           
+            function mostrar(e) {
+              
+                if (e.target == messi5) {
+                    //$("#respuesta").append(mensaje); 
+                    $("#li1").addClass("destacar");
+                    $("#messi1").addClass("linkdestacacursos");
+                    $("#messi2").addClass("linkdestacacursos");
+                    $("#messi3").addClass("linkdestacacursos");
+                    $("#messi4").addClass("linkdestacacursos");
+                    $("#messi5").addClass("linkdestacacursos");
+             
+					n1=1;
+                } 
+                
+        else if (e.target == ronaldinho10) {
+                    $("#li2").addClass("destacar");
+                    $("#ronaldinho10").addClass("linkdestacacursos");
+					$("#ronaldinho9").addClass("linkdestacacursos");
+					$("#ronaldinho8").addClass("linkdestacacursos");
+					$("#ronaldinho7").addClass("linkdestacacursos");
+					$("#ronaldinho6").addClass("linkdestacacursos");
+					$("#ronaldinho5").addClass("linkdestacacursos");
+					$("#ronaldinho4").addClass("linkdestacacursos");
+					$("#ronaldinho3").addClass("linkdestacacursos");
+					$("#ronaldinho2").addClass("linkdestacacursos");
+					$("#ronaldinho1").addClass("linkdestacacursos");
+                   
+				n2=1;
+                } 
+				else if (e.target == ronaldinho2) {
+                    $("#li3").addClass("destacar");
+                    $("#cristiano1").addClass("linkdestacacursos");
+                    $("#cristiano2").addClass("linkdestacacursos");
+                    $("#cristiano3").addClass("linkdestacacursos");
+                    $("#cristiano4").addClass("linkdestacacursos");
+                    $("#cristiano5").addClass("linkdestacacursos");
+                    $("#cristiano6").addClass("linkdestacacursos");
+                    $("#cristiano7").addClass("linkdestacacursos");
+                    $("#cristiano8").addClass("linkdestacacursos");
+					$("#ronaldinho2").addClass("linkdestacacursos");
+					n3=1;
+                } 
+				else if (e.target == zico4) {
+                    $("#li4").addClass("destacar");
+                    $("#zico1").addClass("linkdestacacursos");
+                    $("#zico2").addClass("linkdestacacursos");
+                    $("#zico3").addClass("linkdestacacursos");
+                    $("#zico4").addClass("linkdestacacursos");
+                    n4=1;
+                }
+				 else if (e.target == pibe10) {
+
+                    $("#li5").addClass("destacar");
+                    $("#pibe1").addClass("linkdestacacursos");
+                    $("#pibe2").addClass("linkdestacacursos");
+                    $("#pibe3").addClass("linkdestacacursos");
+                    $("#pibe4").addClass("linkdestacacursos");
+                    $("#pibe5").addClass("linkdestacacursos");
+                    $("#pibe6").addClass("linkdestacacursos");
+                    $("#pibe7").addClass("linkdestacacursos");
+                    $("#pibe8").addClass("linkdestacacursos");
+					$("#pibe9").addClass("linkdestacacursos");
+                    $("#pibe10").addClass("linkdestacacursos");
+					n5=1;
+                }
+				 else if (e.target == asprilla7) {
+                    $("#li6").addClass("destacar");
+                    $("#asprilla1").addClass("linkdestacacursos");
+                    $("#asprilla2").addClass("linkdestacacursos");
+                    $("#asprilla3").addClass("linkdestacacursos");
+                    $("#asprilla4").addClass("linkdestacacursos");
+					$("#asprilla5").addClass("linkdestacacursos");
+                    $("#asprilla6").addClass("linkdestacacursos");
+                    $("#asprilla7").addClass("linkdestacacursos");
+                    $("#pibe10").addClass("linkdestacacursos");
+					n6=1;
+					
+                }
+				 else if (e.target == maradona8) {
+                    $("#li7").addClass("destacar");
+                    $("#maradona1").addClass("linkdestacacursos");
+                    $("#maradona2").addClass("linkdestacacursos");
+                    $("#maradona3").addClass("linkdestacacursos");
+                    $("#maradona4").addClass("linkdestacacursos");
+                    $("#maradona5").addClass("linkdestacacursos");
+					$("#maradona6").addClass("linkdestacacursos");
+                    $("#maradona7").addClass("linkdestacacursos");
+                    $("#maradona8").addClass("linkdestacacursos");
+					n7=1;
+                } 
+				else if (e.target == piero8) {
+                    $("#li8").addClass("destacar");
+                    $("#piero1").addClass("linkdestacacursos");
+                    $("#piero2").addClass("linkdestacacursos");
+                    $("#piero3").addClass("linkdestacacursos");
+                    $("#piero4").addClass("linkdestacacursos");
+                    $("#piero5").addClass("linkdestacacursos");
+                    $("#piero6").addClass("linkdestacacursos");
+                    $("#piero7").addClass("linkdestacacursos");
+					$("#piero8").addClass("linkdestacacursos");
+					n8=1;
+                } 
+				else if (e.target == gullit6) {
+                    $("#li9").addClass("destacar");
+                    $("#gullit1").addClass("linkdestacacursos");
+                    $("#gullit2").addClass("linkdestacacursos");
+                    $("#gullit3").addClass("linkdestacacursos");
+                    $("#gullit4").addClass("linkdestacacursos");
+                    $("#gullit5").addClass("linkdestacacursos");
+                    $("#gullit6").addClass("linkdestacacursos");
+					n9=1;
+                } 
+				else if (e.target == puskas6) {
+                    $("#li10").addClass("destacar");
+                    $("#puskas1").addClass("linkdestacacursos");
+                    $("#puskas2").addClass("linkdestacacursos");
+                    $("#puskas3").addClass("linkdestacacursos");
+                    $("#puskas4").addClass("linkdestacacursos");
+                    $("#puskas5").addClass("linkdestacacursos");
+					$("#puskas6").addClass("linkdestacacursos");
+					n10=1;
+                }
+				else{
+                     se_busca();
+                }
+miNum = document.getElementById("c_intentos").value;
+
+                var numero = parseInt(miNum);
+
+                intentos=n1+n2+n3+n4+n5+n6+n7+n8+n9+n10;
+                intentos_consumidos.value = intentos;
+               
+
+                if (numero_ganador == numero) {
+                   
+                        $("#cerrar1").fadeIn(3000);
+                        $("#banner1").fadeIn(3000);
+                    
+                }
+            }
+
+            
+			
+
+
+        </script>
+
+
+    </body>
+</html>

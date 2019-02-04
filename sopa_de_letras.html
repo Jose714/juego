@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sopa de letras</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Jquery/jquery.js"></script>
+        <script src="cronometro.js"></script>
+        <script >
+$(document).ready(function(){
+ $("#banner1").hide();//cerrar el mensaje de congratulation  
+  $("#banner2").hide();
+});
+        </script>
+
+    </head>
+    <body id="cuerpo" onLoad="iniciar()">
+
+        <div id="cabecera">Sopa de letras</div>
+        <div id="marcador">
+            <table id="tabla1" width="25%"  border="0">
+                <tr>
+
+                    <td><a href="pagina_inicio.html"><img src="imagenes/beach-hut-1-152-287755.png" id="c_mensaje" width="50px" height="50px" >Home</a></td>
+                    <td>Palabras Encontradas<label for="textfield2"></label><input type="text" name="textfield2" id="c_intentos"></td>
+
+                </tr>
+            </table>
+            <div id="nav">
+                <ul>
+                    <li> <a href="pagina_inicio.html">Inicio</a></li>
+                    <li> <a href="../../../../Desktop/JavaScript/doWhile_intetos.html">Juegos gratis</a></li>
+                    <li> <a href="sopa_de_letras_level2.html">Next level</a></li>	
+                    <li> <a href="https://www.youtube.com">Mas</a></li>	
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+        <div id="contenedor_lista">
+            <ul>
+            <h3>Mamiferos</h3>
+                <li id="li1">JIRAFA</li>
+                <li id="li2">LEON</li>
+                <li id="li3">OSO</li>
+                <li id="li4">PINGUINO</li>
+                <li id="li5">ALCATRAZ</li>
+                <li id="li6">GATO</li>
+                <li id="li7">PERRO</li>
+                <li id="li8">GALLINA</li>
+                <li id="li9">AGUILA</li>
+                <li id="li10">RATON</li>
+
+            </ul>
+        </div>
+
+        <form name="form1" method="post" action="" id="miformulario">
+
+            <table id="tabla2" width="500" height="500"  class="sopa">
+
+                <tr>
+
+                    <td id="letra1" class="resaltar1">J</td>
+                    <td id="letra2">I</td>
+                    <td id="letra3">R</td>
+                    <td id="letra4">A</td>
+                    <td id="letra5">F</td>
+                    <td id="letra6">A</td>
+                    <td id="letra7">W</td>
+                    <td id="letra8">Z</td>
+                    <td id="leon1">L</td>
+                    <td >S</td>
+                    <td >S</td>
+                    <td >R</td>
+                    <td >Z</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+
+                </tr>
+                <tr>
+                    <td >Z</td>
+                    <td >X</td>
+                    <td >V</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td id="leon2">E</td>
+                    <td id="letra10">O</td>
+                    <td id="letra11">S</td>
+                    <td id="letra12">O</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >H</td>
+                    <td >M</td>
+                    <td >Q</td>
+                    <td >E</td>
+                </tr>
+                <tr>
+
+                    <td id="letra19">P</td>
+                    <td id="letra20">I</td>
+                    <td id="letra21">N</td>
+                    <td id="letra22">G</td>
+                    <td id="letra23">U</td>
+                    <td id="letra24">I</td>
+                    <td id="letra25">N</td>
+                    <td id="letra26">O</td>
+                    <td id="leon3">O</td>
+                    <td >J</td>
+                    <td >E</td>
+                    <td >R</td>
+                    <td >R</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td id="raton5">N</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td id="letra28">O</td>
+                    <td id="letra29">C</td>
+                    <td id="letra30">K</td>
+                    <td id="gallina1">A</td>
+                    <td id="gato1">A</td>
+                    <td id="letra33">G</td>
+                    <td id="letra34">B</td>
+                    <td id="letra35">S</td>
+                    <td id="leon4">N</td>
+                    <td >J</td>
+                    <td >K</td>
+                    <td >R</td>
+                    <td >L</td>
+                    <td >M</td>
+                    <td id="raton4">O</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+                    <td >J</td>
+                    <td >I</td>
+                    <td >R</td>
+                    <td id="gallina2">L</td>
+                    <td >F</td>
+                    <td id="gato2">T</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                    <td id="letra37">A</td>
+                    <td id="letra38">L</td>
+                    <td id="letra39">C</td>
+                    <td id="letra40">A</td>
+                    <td id="letra41">T</td>
+                    <td id="letra42">R</td>
+                    <td id="letra43">A</td>
+                    <td id="letra44" >Z</td>
+                    <td >P</td>
+                </tr>
+                <tr>
+
+                    <td >O</td>
+                    <td >P</td>
+                    <td >Q</td>
+                    <td id="gallina3">L</td>
+                    <td >T</td>
+                    <td >G</td>
+                    <td id="gato3" >O</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td >J</td>
+                    <td >I</td>
+                    <td id="perro5" >O</td>
+                    <td id="raton2">A</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td id="letra28">L</td>
+                    <td id="letra29">M</td>
+                    <td id="letra30">N</td>
+                    <td id="gallina4">I</td>
+                    <td >T</td>
+                    <td id="letra33">G</td>
+                    <td id="letra34">B</td>
+                    <td id="letra35">S</td>
+                    <td id="letra36">N</td>
+                    <td >S</td>
+                    <td >K</td>
+                    <td id="perro4">R</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td >J</td>
+                    <td >K</td>
+                    <td >T</td>
+                    <td id="gallina5">N</td>
+                    <td >T</td>
+                    <td >G</td>
+                    <td >B</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td >X</td>
+                    <td >I</td>
+                    <td id="perro3">R</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >E</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td >H</td>
+                    <td >B</td>
+                    <td >C</td>
+                    <td id="gallina6">A</td>
+                    <td >T</td>
+                    <td >G</td>
+                    <td >B</td>
+                    <td >S</td>
+                    <td >N</td>
+                    <td >J</td>
+                    <td >I</td>
+                    <td id="perro2">E</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >S</td>
+                    <td >S</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+                <tr>
+
+                    <td >D</td>
+                    <td >F</td>
+                    <td >G</td>
+                    <td >H</td>
+                    <td >I</td>
+                    <td id="aguila6">A</td>
+                    <td id="aguila5">L</td>
+                    <td id="aguila4">I</td>
+                    <td id="aguila3">U</td>
+                    <td id="aguila2">G</td>
+                    <td id="aguila1">A</td>
+                    <td id="perro1">P</td>
+                    <td >A</td>
+                    <td >F</td>
+                    <td >A</td>
+                    <td >W</td>
+                    <td >Z</td>
+                    <td >L</td>
+                </tr>
+            </table>
+        </form>
+        <div id="banner"><h3>Instrucciones</h3>
+            Para seleccionar la palabra a buscar debes
+            dar click en la ultima letra con la cual 
+            esta escrita esta de otra manera no podras seleccionar la palabra que encontraste.
+            <div id="imagen"><img src="imagenes/gorgori.gif" width="80px" height="100px" id="img1"></div>
+            <p id="cerrar">X</p>
+        </div>
+
+        <div id="banner1"><h3>Congratulation</h3>
+            <p id="cerrar1">X</p>
+        </div>
+         <div id="banner2"><h3>Haz Perdido la partida</h3>
+            <p id="cerrar2">X</p>
+        </div>
+        <div id="tiempo"><p id="cronometro">Horas: <span id="hora">00</span> Minutos: <span id="minuto">00</span> Segundos:  <span id="segundo">00</span></p></div>
+        <img src="imagenes/seBusca.jpg" id="sebusca">
+        
+       <div id="play">Play</div>
+    <script>
+            $(document).ready(function () {
+                document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+                document.getElementById("cerrar1").addEventListener("click", cerrar_banner1, false);
+				 document.getElementById("cerrar2").addEventListener("click", cerrar_banner2, false);
+            });
+            function cerrar_banner() {
+                $("#banner").remove();
+            }
+            function cerrar_banner1() {
+                $("#banner1").remove();
+            }
+			  function cerrar_banner2() {
+                $("#banner2").remove();
+            }
+            var numero_ganador = 9;
+        //alert(numero_aleatorio);
+            var miNum = 0;
+            var numero;
+            var intentos = 0;
+            var acumulado="";
+			var n1=0,n2=0,n3=0,n4=0,n5=0,n6=0,n7=0,n8=0,n9=0,n10=0;
+            var intentos_consumidos = document.getElementById("c_intentos");
+        </script>
+
+        <script>
+
+            var palabra = document.querySelectorAll("td");//esto es un array
+            for (var i = 0; palabra.length; i++) {
+                palabra[i].addEventListener("click", mostrar, false);
+            };
+           
+            function mostrar(e) {
+              
+                if (e.target == letra6) {
+                    //$("#respuesta").append(mensaje); 
+                    $("#li1").addClass("destacar");
+                    $("#letra1").addClass("linkdestacacursos");
+                    $("#letra2").addClass("linkdestacacursos");
+                    $("#letra3").addClass("linkdestacacursos");
+                    $("#letra4").addClass("linkdestacacursos");
+                    $("#letra5").addClass("linkdestacacursos");
+                    $("#letra6").addClass("linkdestacacursos");
+					n1=1;
+                } 
+                
+        else if (e.target == letra12) {
+                    $("#li3").addClass("destacar");
+                    $("#letra10").addClass("linkdestacacursos");
+                    $("#letra11").addClass("linkdestacacursos");
+                    $("#letra12").addClass("linkdestacacursos");
+				n2=1;
+                } else if (e.target == letra26) {
+                    $("#li4").addClass("destacar");
+                    $("#letra19").addClass("linkdestacacursos");
+                    $("#letra20").addClass("linkdestacacursos");
+                    $("#letra21").addClass("linkdestacacursos");
+                    $("#letra22").addClass("linkdestacacursos");
+                    $("#letra23").addClass("linkdestacacursos");
+                    $("#letra24").addClass("linkdestacacursos");
+                    $("#letra25").addClass("linkdestacacursos");
+                    $("#letra26").addClass("linkdestacacursos");
+					n3=1;
+                } else if (e.target == leon4) {
+                    $("#li2").addClass("destacar");
+                    $("#leon1").addClass("linkdestacacursos");
+                    $("#leon2").addClass("linkdestacacursos");
+                    $("#leon3").addClass("linkdestacacursos");
+                    $("#leon4").addClass("linkdestacacursos");
+                    n4=1;
+                } else if (e.target == letra44) {
+
+                    $("#li5").addClass("destacar");
+                    $("#letra37").addClass("linkdestacacursos");
+                    $("#letra38").addClass("linkdestacacursos");
+                    $("#letra39").addClass("linkdestacacursos");
+                    $("#letra40").addClass("linkdestacacursos");
+                    $("#letra41").addClass("linkdestacacursos");
+                    $("#letra42").addClass("linkdestacacursos");
+                    $("#letra43").addClass("linkdestacacursos");
+                    $("#letra44").addClass("linkdestacacursos");
+					n5=1;
+                } else if (e.target == gato3) {
+                    $("#li6").addClass("destacar");
+                    $("#letra22").addClass("linkdestacacursos");
+                    $("#gato1").addClass("linkdestacacursos");
+                    $("#gato2").addClass("linkdestacacursos");
+                    $("#gato3").addClass("linkdestacacursos");
+					n6=1;
+					
+                } else if (e.target == perro5) {
+                    $("#li7").addClass("destacar");
+                    $("#perro1").addClass("linkdestacacursos");
+                    $("#perro2").addClass("linkdestacacursos");
+                    $("#perro3").addClass("linkdestacacursos");
+                    $("#perro4").addClass("linkdestacacursos");
+                    $("#perro5").addClass("linkdestacacursos");
+					n7=1;
+                } else if (e.target == gallina6) {
+                    $("#li8").addClass("destacar");
+                    $("#letra22").addClass("linkdestacacursos");
+                    $("#gallina1").addClass("linkdestacacursos");
+                    $("#gallina2").addClass("linkdestacacursos");
+                    $("#gallina3").addClass("linkdestacacursos");
+                    $("#gallina4").addClass("linkdestacacursos");
+                    $("#gallina5").addClass("linkdestacacursos");
+                    $("#gallina6").addClass("linkdestacacursos");
+					n8=1;
+                } else if (e.target == aguila6) {
+                    $("#li9").addClass("destacar");
+                    $("#aguila1").addClass("linkdestacacursos");
+                    $("#aguila2").addClass("linkdestacacursos");
+                    $("#aguila3").addClass("linkdestacacursos");
+                    $("#aguila4").addClass("linkdestacacursos");
+                    $("#aguila5").addClass("linkdestacacursos");
+                    $("#aguila6").addClass("linkdestacacursos");
+					n9=1;
+                } else if (e.target == raton5) {
+                    $("#li10").addClass("destacar");
+                    $("#perro4").addClass("linkdestacacursos");
+                    $("#raton2").addClass("linkdestacacursos");
+                    $("#letra41").addClass("linkdestacacursos");
+                    $("#raton4").addClass("linkdestacacursos");
+                    $("#raton5").addClass("linkdestacacursos");
+					n10=1;
+                }else{
+              se_busca();
+                }
+miNum = document.getElementById("c_intentos").value;
+
+                var numero = parseInt(miNum);
+
+                intentos=n1+n2+n3+n4+n5+n6+n7+n8+n9+n10;
+                intentos_consumidos.value = intentos;
+               
+
+                if (numero_ganador == numero) {
+                   
+                        $("#cerrar1").fadeIn(3000);
+                        $("#banner1").fadeIn(3000);
+                }
+            }
+
+        </script>
+
+
+    </body>
+</html>
